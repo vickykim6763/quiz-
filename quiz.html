@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>QUIZ CARDS</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="quiz.css">
+    </head>
+<body>
+    <div class="container">
+        <div id="start-screen" class="start">
+            <h1>WELCOME!</h1>
+                <p> You have 1 minute for each question</p>
+                <button id="start">START QUIZ </button>
+        </div>
+        <div id="timer" class="timer">60s</div>
+        <button id="pause-btn">Pause</button>
+            <div id="score-counter" class="score-counter">score:0 </div>
+    </div>
+    <br>
+<div  id="questions" class="questions hidden">
+    <div id="question-counter"></div>
+    <h2 id="question-txt"></h2>
+    <div id="options" class="options">
+        <button class="option-btn" id="option1">Option 1</button>
+        <button class="option-btn" id="option2">Option 2</button>
+        <button class="option-btn" id="option3">Option 3</button>
+        <button class="option-btn" id="option4">Option 4</button>
+    </div>
+    <button id="next-btn" class="option-btn">Next Question</button>
+</div>
+    <br>
+    <br>
+    <div id="result-screen" class="screen-hidden">
+            <h1>Quiz Finished!</h1>
+            <p>Your final score: <span id="final-score">0</span></p>
+            <div id="results-summary">
+                </div>
+            <button id="restart-btn">Restart Quiz</button>
+        </div>
+    </div>
+    <script src="quiz.js"></script>
+</body>
+</html>
